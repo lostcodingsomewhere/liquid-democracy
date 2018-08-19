@@ -14,6 +14,7 @@ liquid-democracy provides a backend for creating a 'liquid/proxy democracy votin
 - ability to delegate/proxy your vote
 - ability to batch delegate/proxy votes based on tags
 - ability to retreive votes you have access to
+- login via identity service (ex: uport/civic/coinbase) that will be used for tags in addition to wallet
 
 ### Details:
 #### [required] Each proposition should have
