@@ -1,0 +1,42 @@
+service: liquid-democracy
+
+app: liquid-democracy
+tenant: lostcodingsomewhere
+
+package:
+  excludeDevDependencies: false
+
+plugins:
+  - serverless-offline # serverless-offline needs to be last in the list
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  create:
+    handler: src/routes.handler
+    events:
+      - http: 'POST /vote/create'
+  getVote:
+    handler: src/routes.handler
+    events:
+      - http: 'GET /votes'
+  getVotes:
+    handler: src/routes.handler
+    events:
+      - http: 'GET /vote/{proxy+}'
+  delegate:
+    handler: src/routes.handler
+    events:
+      - http: 'POST /vote/delegate'
+  join:
+    handler: src/routes.handler
+    events:
+      - http: 'POST /vote/join'
+  submit:
+    handler: src/routes.handler
+    events:
+      - http: 'POST /vote/submit'
