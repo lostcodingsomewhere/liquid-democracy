@@ -54,12 +54,35 @@ Tech stack:
   npm install
   ```
 
-2a. Deploy locally:
+2a. Update some code in src/controllers/create.js to point to your local ncentSDK:
+  ```js
+  const NcentSDK = require('../../../../../open-source/ncent.github.io/SDK/source/ncentSDK');
+  ```
+
+2b. Update some code in ncent.github.io/SDK/source/ncentSDK.js to use await/async over Promises
+  ```js
+  async stampToken(public_key, tokenName, numTokens, ExpiryDate, success, reject) {
+      // Make a request for a user with a given ID
+      try {
+          let response = await axios.post(this._net + '/tokentypes', {
+              sponsor_uuid: public_key,
+              Name: tokenName,
+              totalTokens: numTokens,
+              ExpiryDate: ExpiryDate,          
+          });
+          return success(response);
+      } catch(error) {
+          return reject(error);
+      }
+  }
+  ```
+
+3a. Deploy locally:
   ```shell
   sls offline start
   ```
 
-2a. Deploy remotely (must setup serverless framework and aws-cli setup with apikey/secret):
+3a. Deploy remotely (must setup serverless framework and aws-cli setup with apikey/secret):
   ```shell
   sls login
   sls deploy -v
