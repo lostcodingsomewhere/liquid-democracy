@@ -3,6 +3,7 @@
  * [Overview](#overview)
  * [Installation](#install)
  * [Contribute](#contributing)
+ * [Articles] (#articles)
 
 ## Overview
 
@@ -93,3 +94,16 @@ In the event the above does not work, please add an issue.
 
 ## Contributing
 Feel free to create merge requests
+
+## Articles
+* https://blog.united.vote/2016/09/21/what-is-liquid-democracy/
+* https://medium.com/organizer-sandbox/liquid-democracy-true-democracy-for-the-21st-century-7c66f5e53b6f
+* https://www.tdcommons.org/cgi/viewcontent.cgi?article=1092&context=dpubs_series
+* https://words.democracy.earth/blockchain-liquid-democracy-and-the-end-of-the-outsider-a171a0e11816
+* https://www.usenix.org/legacy/event/sec08/tech/full_papers/adida/adida.pdf
+* https://www.semanticscholar.org/paper/An-Information-Theoretic-Model-of-Voting-Systems-Hosp-Vora/24d55c866a7317dae11d37518b312ee460bc33d3
+* http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
+* https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531
+* http://merkle.com/papers/DAOdemocracyDraft.pdf
+* https://basicincome.org/bien/pdf/munich2012/Choi.pdf
+
