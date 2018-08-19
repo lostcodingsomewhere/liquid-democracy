@@ -1,6 +1,7 @@
 # liquid-democracy
 
  * [Overview](#overview)
+ * [Installation](#install)
  * [Contribute](#contributing)
 
 ## Overview
@@ -41,6 +42,30 @@ Example:
 
 Tech stack:
 - Javascript, NodeJS, ExpressJS, Serverless, nCentSDK
+
+## Install
+
+1. Install it using npm:
+  ```shell
+  git clone git@github.com:lostcodingsomewhere/liquid-democracy.git
+  cd liquid-democracy
+  npm install serverless -g
+  npm init -f
+  npm install
+  ```
+
+2a. Deploy locally:
+  ```shell
+  sls offline start
+  ```
+
+2a. Deploy remotely (must setup serverless framework and aws-cli setup with apikey/secret):
+  ```shell
+  sls login
+  sls deploy -v
+  ```
+
+In the event the above does not work, please add an issue.
 
 ## Contributing
 Feel free to create merge requests
