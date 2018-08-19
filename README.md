@@ -3,7 +3,7 @@
  * [Overview](#overview)
  * [Installation](#install)
  * [Contribute](#contributing)
- * [Articles] (#articles)
+ * [Articles and Research](#articles)
 
 ## Overview
 
