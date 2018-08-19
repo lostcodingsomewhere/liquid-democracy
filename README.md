@@ -39,5 +39,8 @@ Example:
 * One year later if the metric goes up, payout everyone that voted/proxied their vote for failure .0001 eth
 * One year later if the metric goes down, payout everyone that voted/proxied their vote for success .0001 eth
 
+Tech stack:
+- Javascript, NodeJS, ExpressJS, Serverless, nCentSDK
+
 ## Contributing
 Feel free to create merge requests
